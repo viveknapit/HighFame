@@ -13,19 +13,24 @@
         android:theme="@style/Theme.HighFame"
         tools:targetApi="31">
         <activity
+            android:name=".screens.GetStartedScreenActivity"
+            android:exported="false" />
+        <activity
             android:name=".screens.LoginScreenActivity"
             android:exported="false" />
         <activity
             android:name=".screens.SplashScreenActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false">
         </activity>
     </application>
 
